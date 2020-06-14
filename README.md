@@ -2,6 +2,7 @@
 負荷試験ツール`Locust`を、AWSのFargate上で実行する環境を構築するTerraformです。<br>
 terraformを実行すると、以下のような環境が構築されます。
 
+[構成図](https://github.com/tomozo6/locust-terraform/blob/master/document/locust.png)
 
 ## Prerequisites
 - Terraform 0.12+
