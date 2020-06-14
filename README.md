@@ -2,7 +2,7 @@
 負荷試験ツール`Locust`を、AWSのFargate上で実行する環境を構築するTerraformです。<br>
 terraformを実行すると、以下のような環境が構築されます。
 
-[構成図](https://github.com/tomozo6/locust-terraform/blob/master/document/locust.png)
+![構成図](https://github.com/tomozo6/locust-terraform/blob/master/document/locust.png)
 
 ## Prerequisites
 - Terraform 0.12+
@@ -13,6 +13,16 @@ $ git clone https://github.com/tomozo6/locust-terraform.git
 $ cd ./locust-terraform
 $ terraform init
 $ terraform apply
+```
+
+applyが成功すると、Outputsとして locustのWebインターフェースへアクセスするためのURLが表示されます。
+
+```
+Apply complete! Resources: 29 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+endpoint = endpoint is here (wait a minute): http://locust-alb-xxxxxxxxxx.ap-northeast-1.elb.amazonaws.com
 ```
 
 ## Uninstalling the locust-terraform
