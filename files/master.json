@@ -1,0 +1,22 @@
+[
+  {
+    "essential": true,
+    "image": "${image}",
+    "name": "${name}",
+    "command": ["-f", "${script_path}", "--master"],
+    "portMappings": [
+      {
+        "containerPort": 8089,
+        "hostPort": 8089
+      },
+      {
+        "containerPort": 5557,
+        "hostPort": 5557
+      },
+      {
+        "containerPort": 5558,
+        "hostPort": 5558
+      }
+    ]
+  }
+]

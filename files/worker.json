@@ -1,0 +1,8 @@
+[
+  {
+    "essential": true,
+    "image": "${image}",
+    "name": "${name}",
+    "command": ["-f", "${script_path}", "--worker", "--master-host=master.locust-local"]
+  }
+]
